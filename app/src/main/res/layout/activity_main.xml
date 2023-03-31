@@ -9,7 +9,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:backgroundTint="#42DBEF"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Score"
-                android:textSize="24sp" />
+                android:textSize="34sp" />
 
             <TextView
                 android:id="@+id/tvScore"
@@ -30,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="0"
-                android:textSize="24sp" />
+                android:textSize="34sp" />
         </LinearLayout>
 
         <ImageView
@@ -39,21 +42,21 @@
             android:layout_height="285dp"
             tools:srcCompat="@tools:sample/avatars" />
 
-		<Button
-			android:id="@+id/btnReinit"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Réinitialiser"
-			/>
-		
+        <Button
+            android:id="@+id/btnReinit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Réinitialiser" />
+
         <TextView
             android:id="@+id/tvMot"
-            android:layout_width="match_parent"
+            android:layout_width="327dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=""
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:text="______"
             android:textAlignment="center"
-            android:textSize="34sp" />
+            android:textSize="24sp" />
 
         <TableLayout
             android:id="@+id/tableLayout"
@@ -62,228 +65,327 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/btnQ"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="Q" />
+                    android:padding="8dp"
+                    android:text="Q"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnW"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="W" />
+                    android:padding="8dp"
+                    android:text="W"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnE"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="E" />
+                    android:padding="8dp"
+                    android:text="E"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="R" />
+                    android:padding="8dp"
+                    android:text="R"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="T" />
+                    android:padding="8dp"
+                    android:text="T"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnY"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="Y" />
+                    android:padding="8dp"
+                    android:text="Y"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnU"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="U" />
+                    android:padding="8dp"
+                    android:text="U"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnI"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="I" />
+                    android:padding="8dp"
+                    android:text="I"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnO"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="O" />
+                    android:padding="8dp"
+                    android:text="O"
+                    android:textColor="#000000" />
+
                 <Button
                     android:id="@+id/btnP"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="P" />
+                    android:padding="8dp"
+                    android:text="O"
+                    android:textColor="#000000" />
             </TableRow>
 
             <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/btnA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="A"/>
+                    android:padding="8dp"
+                    android:text="A"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnS"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="S" />
+                    android:padding="8dp"
+                    android:text="S"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="D" />
+                    android:padding="8dp"
+                    android:text="D"
+                    android:textColor="#000000" />
 
                 <Button
-					android:id="@+id/btnF"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/btnF"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="F" />
+                    android:padding="8dp"
+                    android:text="F"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnG"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="G" />
+                    android:padding="8dp"
+                    android:text="G"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="183dp"
+                    tools:layout_editor_absoluteY="563dp" />
 
                 <Button
                     android:id="@+id/btnH"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="H" />
+                    android:padding="8dp"
+                    android:text="H"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="229dp"
+                    tools:layout_editor_absoluteY="563dp" />
 
                 <Button
                     android:id="@+id/btnJ"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="J" />
+                    android:padding="8dp"
+                    android:text="J"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="274dp"
+                    tools:layout_editor_absoluteY="563dp" />
 
                 <Button
                     android:id="@+id/btnK"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="K" />
+                    android:padding="8dp"
+                    android:text="K"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="320dp"
+                    tools:layout_editor_absoluteY="563dp" />
 
                 <Button
                     android:id="@+id/btnL"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="L" />
-			</TableRow>
+
+                    android:padding="8dp"
+                    android:text="L"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="366dp"
+                    tools:layout_editor_absoluteY="563dp" />
+            </TableRow>
+
+
             <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/btnZ"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="Z" />
-				
+                    android:padding="8dp"
+                    android:text="Z"
+                    android:textColor="#000000" />
+
                 <Button
                     android:id="@+id/btnX"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="X" />
+                    android:padding="8dp"
+                    android:text="X"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="C" />
+                    android:padding="8dp"
+                    android:text="C"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="V" />
+                    android:padding="8dp"
+                    android:text="V"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="B" />
+                    android:padding="8dp"
+                    android:text="B"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="N" />
+                    android:padding="8dp"
+                    android:text="N"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnM"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
-                    android:text="M" />
-
+                    android:padding="8dp"
+                    android:text="M"
+                    android:textColor="#000000" />
 
             </TableRow>
 
+
         </TableLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#020202"
+            android:backgroundTint="#020202" />
 
     </LinearLayout>
 
