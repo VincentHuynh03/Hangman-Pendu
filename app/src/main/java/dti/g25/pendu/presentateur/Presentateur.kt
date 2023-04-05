@@ -17,8 +17,8 @@ class Présentateur (var vue: MainActivity){
 
 
     fun démarrer(listeDeMots: Array<String>) {
-
         jeu = Jeu(listeDeMots)
+        jeu.réinitialiser()
         vue.afficherScore(jeu.pointage)
         vue.afficherEtatLettres(jeu.motÀDeviner)
 
