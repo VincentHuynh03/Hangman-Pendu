@@ -8,21 +8,11 @@ class Jeu(val listeDeMots: Array<String>) {
 
     var lettresEssayées = CharArray(26)
     var motÀDeviner = ""
+    var nbErreurs = 0
 
-    /**
-     *  pointage représente le nombre de caractères de la chaîne
-    *  motÀDeviner qui ont été correctement devinés et qui sont
-    *  inclus dans la liste des lettresEssayées.
-     */
+   var pointage: Int= 0
+       get() = motÀDeviner.count { it in lettresEssayées }
 
-    val pointage: Int
-        get() = motÀDeviner.count { it in lettresEssayées }
-
-    /**
-     * nbErreurs représente le nombre de caractère dans lettresEssayé qui ne font pas partie du mots à deviner
-     */
-    val nbErreurs: Int
-        get() = lettresEssayées.count { it !in motÀDeviner }
 
     /**
      * Constructeur qui reçoit un tableau de mots,
@@ -49,8 +39,14 @@ class Jeu(val listeDeMots: Array<String>) {
         if (lettreEnMajuscule in lettresEssayées) {
             return false
         }
-        lettresEssayées[lettresEssayées.indexOf('\u0000')] = lettreEnMajuscule
-        return motÀDeviner.contains(lettreEnMajuscule)
+        val resultat = motÀDeviner.contains(lettreEnMajuscule)
+        if (resultat) {
+            lettresEssayées[lettresEssayées.indexOf('\u0000')] = lettreEnMajuscule
+            pointage++
+        }else{
+            nbErreurs++
+        }
+        return resultat
 
     }
 
@@ -70,6 +66,8 @@ class Jeu(val listeDeMots: Array<String>) {
     fun réinitialiser() {
         lettresEssayées = CharArray(26)
         motÀDeviner = listeDeMots[Random.nextInt(listeDeMots.size)].uppercase(Locale.ROOT)
+        pointage=0
+        nbErreurs=0
     }
 
 

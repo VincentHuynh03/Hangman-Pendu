@@ -2,6 +2,7 @@ package dti.g25.pendu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 import android.view.View
 import android.widget.Button
@@ -37,13 +38,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         for (i in letters.indices) {
             val resID = resources.getIdentifier("btn${letters[i]}", "id", packageName)
             val button = findViewById<Button>(resID)
-            button.setOnClickListener { onClick(button) }
+            button.setOnClickListener(this)
         }
-
 
         tvScore = findViewById( R.id.tvScore )
         présentateur.démarrer(fruits)
@@ -53,11 +52,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      * Au click d'un boutton, la lettre correspondant est associé est enregistrer dans la méthode sélectionnerLettre()
      */
     override fun onClick(v: View) {
+
         if (v is Button) {
-            val lettre = v.text.toString().single()
+            val lettre = v.text.toString()[0]
             présentateur.sélectionnerLettre(lettre)
+            v.isEnabled = false
         }
+
     }
+
+
+
+
 
     /**
      *Change la couleur du bouton quand elle est cliqué
@@ -78,6 +84,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     button.setBackgroundColor(couleurEsssaye)
                 }
             }
+
+
         }
 
     }
@@ -88,7 +96,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      */
     fun afficherScore(score: Int) {
 
-        tvScore.text = score.toString()
+      tvScore.text = score.toString()
     }
 
 }
