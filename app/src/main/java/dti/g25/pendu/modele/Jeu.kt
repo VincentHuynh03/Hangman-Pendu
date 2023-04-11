@@ -48,6 +48,8 @@ class Jeu(val listeDeMots: Array<String>) {
         }
         return resultat
 
+
+
     }
 
     /**
@@ -70,15 +72,13 @@ class Jeu(val listeDeMots: Array<String>) {
         nbErreurs=0
     }
 
-
-
     /**
      * Devrait retourner un tableau de l'état des lettres du mot à deviner.
      * Remplace les lettres non devinées par des underscores.
      */
 
-    fun étatLettres(): CharArray {
-        return motÀDeviner.map { if (it in lettresEssayées) it.uppercaseChar() else '_' }.toCharArray()
+    fun étatLettres(): String {
+        return motÀDeviner.map { if (it in lettresEssayées) it else '_' }.joinToString(" ")
     }
 
 }

@@ -43,7 +43,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <Button
-            android:id="@+id/btnReinit"
+            android:id="@+id/btnRecommencer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Réinitialiser" />
@@ -54,7 +54,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="50dp"
-            android:text="______"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -174,7 +173,7 @@
                     android:backgroundTint="#42DBEF"
                     android:onClick="onClick"
                     android:padding="8dp"
-                    android:text="O"
+                    android:text="P"
                     android:textColor="#000000" />
             </TableRow>
 

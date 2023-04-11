@@ -1,6 +1,7 @@
 package dti.g25.pendu.modele
 
 
+import org.junit.Assert.assertArrayEquals
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
@@ -14,7 +15,9 @@ class JeuTest {
             val jeu = Jeu(arrayOf("PENDU"))
             jeu.essayerUneLettre('P')
             jeu.essayerUneLettre('E')
-            jeu.essayerUneLettre('S')
+             jeu.essayerUneLettre('E')
+            jeu.essayerUneLettre('s')
+
             jeu.essayerUneLettre('N')
              jeu.essayerUneLettre('D')
             assertEquals(4, jeu.pointage)
@@ -44,10 +47,12 @@ class JeuTest {
         assertEquals(3, jeu.nbErreurs)
     }
 
+}
 
 
 
 
 
 
-    }
+
+
