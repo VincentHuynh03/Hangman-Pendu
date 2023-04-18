@@ -10,7 +10,7 @@ class Jeu(val listeDeMots: Array<String>) {
     var motÀDeviner = ""
     var nbErreurs = 0
 
-   var pointage: Int= 0
+   var pointage: Int=0
        get() = motÀDeviner.count { it in lettresEssayées }
 
 
@@ -40,6 +40,8 @@ class Jeu(val listeDeMots: Array<String>) {
             return false
         }
         val resultat = motÀDeviner.contains(lettreEnMajuscule)
+
+
         if (resultat) {
             lettresEssayées[lettresEssayées.indexOf('\u0000')] = lettreEnMajuscule
             pointage++
@@ -68,8 +70,6 @@ class Jeu(val listeDeMots: Array<String>) {
     fun réinitialiser() {
         lettresEssayées = CharArray(26)
         motÀDeviner = listeDeMots[Random.nextInt(listeDeMots.size)].uppercase(Locale.ROOT)
-        pointage=0
-        nbErreurs=0
     }
 
     /**

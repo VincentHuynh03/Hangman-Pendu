@@ -42,9 +42,9 @@ class JeuTest {
     fun `Étant donné le mot à deviner est CHAT, lorsqu'on essaie des lettres qui ne font pas partie du mot, on obtient 3 erreurs`() {
         val listeDeMots = arrayOf("CHAT")
         val jeu = Jeu(listeDeMots)
-        val lettres = "zxy"
+        val lettres = "zxyd"
         lettres.forEach { jeu.essayerUneLettre(it) }
-        assertEquals(3, jeu.nbErreurs)
+        assertEquals(4, jeu.nbErreurs)
     }
 
 }
