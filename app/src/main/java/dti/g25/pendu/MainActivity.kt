@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      * Elle change la couleur du bouton cliqué en vert si la lettre est dans le mot à deviner, sinon elle le change en gris.
      * Elle désactive le bouton cliqué.
      *
-     * @param v la partie vue qui a été cliquée par l'utilisateur
+     * @param v la partie vue qui a été cliquée par l'utilisateur.
      */
     override fun onClick(v: View) {
         if (v is Button) {
