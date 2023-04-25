@@ -47,6 +47,20 @@ class JeuTest {
         assertEquals(4, jeu.nbErreurs)
     }
 
+
+    @Test
+    fun `Étant donné le mot à deviner est TESTER, lorsqu'on trouve 5 lettres correctes, on obtient 5 points`(){
+        val jeu = Jeu(arrayOf("TESTER"))
+        val lettres = "teste"
+        lettres.forEach { jeu.essayerUneLettre(it) }
+        assertEquals(5, jeu.pointage)
+    }
+
+
+
+
+
+
 }
 
 
