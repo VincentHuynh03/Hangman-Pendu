@@ -1,7 +1,9 @@
 
 # Hangman/Pendu
 Hangman Game for Android made in Kotlin
+
 Jeu de Pendu pour Android fait en Kotlin
+
 *by Vincent Huynh, instructions par Patrick Lafrance*.
 
 
