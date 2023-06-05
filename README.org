@@ -1,3 +1,10 @@
+
+# Hangman
+Hangman Game for Android made in Kotlin
+*by Vincent Huynh, instructions par Patrick Lafrance*.
+
+
+
 #+SETUPFILE: https://plafrance.pages.dti.crosemont.quebec/org-html-themes/org/theme-readtheorg.setup
 #+PROPERTY: header-args :eval never-export
 #+#+TITLE: Le Pendu
